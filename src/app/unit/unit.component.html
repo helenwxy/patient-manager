@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-xs-10">
+    <app-unit-detail
+      (roomAdded)="onRoomAdded($event)"></app-unit-detail>
+    <hr>
+    <ul class="list-group">
+      <a class="list-group-item"
+         style="cursor: pointer"
+         *ngFor="let room of rooms">
+        <h4> {{room.name}}: {{room.isolation}}</h4>
+        <p>Reason for Isolation: {{room.reason}}</p>
+      </a>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h2>{{ patient.lastName.toUpperCase() }}, {{ patient.firstName }}</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h3>{{ patient.primaryDiagnosis }}</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="btn-group" appDropdown #r="appDropdown">
+      <button type="button"
+              class="btn btn-primary dropdown-toggle">Manage Patient<span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" [ngClass]="{'show': r.isShow}">
+        <li><a class="dropdown-item" href="#">Edit patient</a></li>
+        <li><a class="dropdown-item" href="#">Submit new report</a></li>
+        <li><a class="dropdown-item" href="#">See trend</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    Systems
+  </div>
+</div>

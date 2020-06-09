@@ -1,0 +1,11 @@
+<a
+  href="#"
+  class="list-group-item clearfix"
+  (click)="onSelected()">
+  <h4 class="list-group-item-primary" style="background-color: transparent">
+    {{ patient.lastName.toUpperCase() }}, {{ patient.firstName }}
+  </h4>
+  <span><button class="btn btn-danger float-right">Discharge Patient</button></span>
+  <p class="list-group-item-secondary"  style="background-color: transparent; margin-bottom: 0">{{ patient.phNumber }}</p>
+  <p class="list-group-item-secondary"  style="background-color: transparent; margin-bottom: 0">{{ patient.codeStatus }}</p>
+</a>

@@ -1,0 +1,15 @@
+
+<div class="row">
+  <div class="col-md-5">
+    <app-patient-list>
+    </app-patient-list>
+  </div>
+  <div class="col-md-7">
+    <app-patient-detail
+      *ngIf="selectedPatient; else infoText"
+    [patient]="selectedPatient"></app-patient-detail>
+    <ng-template #infoText>
+      <p>Please select a Patient!</p>
+    </ng-template>
+  </div>
+</div>

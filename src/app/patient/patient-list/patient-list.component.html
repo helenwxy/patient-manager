@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-sm-12">
+    <button class="btn btn-success">New Patient</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-sm-12">
+    <app-patient-system
+      *ngFor="let patientEl of patients"
+      [patient]="patientEl">  <!--[patient] refers to the patient element in patient-system-->
+    </app-patient-system>
+  </div>
+</div>
